@@ -1,0 +1,318 @@
+@charset 'utf-8';
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+:root{
+    --larguraDaLogo: 20%;
+    --alturaDaLogo: 5em;
+    --verde: rgba(0, 250, 0, 0.7);
+    --preto: rgb(1, 9, 22);
+}
+html{
+    background-color: transparent;
+}
+body{
+    background-color: var(--preto);
+    height: auto;
+}
+header{
+    padding: 3%;
+    background-color: var(--preto);
+}
+/*
+h1{
+    position: absolute;
+    top: 5.2%;
+    left: calc(var(--larguraDaLogo) * 1.5);
+    font-family: 'Delius Swash Caps', cursive;
+    text-align: center;
+}
+*/
+
+/*MOBILE FIRST*/
+#logo{
+    display: block;
+    width: var(--larguraDaLogo);
+    height: calc(var(--alturaDaLogo) - 0.5em);
+    background:transparent url(a.png) center top no-repeat;
+    background-size: cover;
+    margin-left: calc(var(--larguraDaLogo) * 2.0);
+    margin-bottom: 2%;
+}
+
+#botoesgerais{
+    position: absolute;
+    top: 0%;
+    left: calc(var(--larguraDaLogo) * 3.5);
+    width: calc(var(--larguraDaLogo) + 10%);
+    height: var(--alturaDaLogo);
+    border: 1px solid black;
+    padding: 3%;
+}
+
+.botaoNvisivel{
+    background-color: transparent;
+}
+.botaoNvisivel > p{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    color: var(--verde) ;
+}
+
+#hamb{
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+nav{
+    width: 100%;
+    background-color: transparent;
+    display: none;
+}
+nav > a > input[type="button"]{
+    display: block;
+    width: 100%;
+    padding: 1.4%;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid var(--verde);
+    margin-bottom: 0.5%;
+}
+nav > input[type="button"]:hover{
+    border: -1px inset black;
+    background-color: lightblue;
+    cursor: pointer;
+}
+#tela{
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.55);
+    width: calc(var(--larguraDaLogo) * 4) ;
+    margin-top: 2%;
+    margin-left: calc(var(--larguraDaLogo)/2);
+    margin-right: calc(var(--larguraDaLogo)/2);
+    height: calc(var(--alturaDaLogo) + 9em);
+    border-radius: 10px;
+    background-image: url(3.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+   
+}
+#anuncios{
+    border: 1px solid green;
+    width: calc(var(--larguraDaLogo) * 4);
+    height: calc(var(--alturaDaLogo) - 3.5em);
+    border-radius: 30px;
+    font-size: small;
+    text-indent: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.498);
+}
+
+p{
+    margin:3%;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+#botoesgerais > p{
+    display: inline-block;
+    margin: 0%;
+}
+#botoesgerais > span{
+    display: inline-block;
+    margin: 0%;
+    line-height: 30px;
+}
+#botoesgerais > p{
+    display: inline-block;
+    margin: 0%;
+    text-indent: 0px;
+}
+#gradeDeCursos{
+    width: calc(var(--larguraDaLogo) * 4);
+    height: auto;
+    margin-left: calc(var(--alturaDaLogo)/2);
+    margin-right: calc(var(--alturaDaLogo)/2);
+    background-color: var(--preto);
+    border-radius: 10px;
+    border: 1px solid var(--verde);
+}
+#gradeDeCursos > h5{
+    text-align: center;
+    margin-top: 10px;
+}
+.cursos{
+    width: calc(var(--larguraDaLogo)* 4);
+    height: calc(var(--alturaDaLogo) + 2em);
+    margin: calc(var(--larguraDaLogo)/2);
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+}
+.cursos > p{
+    background-color: rgba(0, 0, 0, 0.372);
+    color:white;
+    text-indent: 5px;
+    border-radius: 8px;
+    background-position: center center;
+    background-size: contain;
+}
+#c1{
+    background-image: url(adm.jpg);
+}
+#c2{
+    background-position: center bottom;
+    background-image: url(js.jpg);
+}
+#c3{
+    background-size: contain;
+    background-position: center right;
+    background-image: url(atendcli.jpg);
+}
+#c4{
+    background-color: white;
+    background-size: contain;
+    background-image: url(sqg.png);
+}
+#c5{
+    background-size: cover;
+    background-image: url(english.png);
+}
+#c6{
+    background-size: cover;
+    background-image: url(chemi.jpg);
+}
+#c7{
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url(adv.jpg);
+}
+#c8{
+    background-size: cover;
+    background-image: url(sec.jpg);
+}
+#c9{
+    background-size: cover;
+    background-image: url(musique.jpg)
+}
+#teladelogin{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.407);
+    display: none;
+}
+#inputesdelogin{
+    background-color: var(--preto);
+    margin-top: 44%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(35% * 1.5);
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.526);
+}
+
+#inputesdelogin > h2{
+    display: inline-block;
+}
+#inputes{
+    background-color: transparent;
+}
+#fechar{
+    margin-left: calc(var(--larguraDaLogo)*2);
+    padding: 1%;
+    cursor: pointer;
+    position: absolute;
+}
+form > input[type="submit"]{
+    color: black;
+}
+.doiframe{
+    height: 900px;
+    width: 100%;
+    background-color: red;
+}
+#cadastrarParaCG{
+    position: absolute;
+    left: 0px;
+    top: 8.5%;
+    background-color: rgb(59, 56, 56);
+    border: 1px solid var(--verde);
+}
+#cadastrarParaCG > input[type="button"]{
+    color: black;
+    margin-left: 80%;
+}
+#preto{
+    display: none;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+#cg1{
+    background-image: url(adm.jpg);
+}
+#cg2{
+    background-image: url(cromato.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#cg3{
+    background-image: url(planilhas.png);
+}
+#cg4{
+    background-image: url(musique.jpg);
+}
+#cg5{
+    background-image: url(chemi+html.jpg);
+}
+#cg6{
+    background-image: url(imgadm.png);
+}
+#cg7{
+    background-image: url(remedio.jpg);
+}
+#cg8{
+    background-image: url(som.jpg);
+}
+#cg9{
+    background-image: url(escrimusical.jpg);
+}
+#cg10{
+    background-image: url(js.jpg);
+}
+.iframesParaAulas{
+    background-color: white;
+    padding: 3.2%;
+}
+.iframesParaAulas > h1{
+    color: black;
+    font-size: 1em;
+}
+.iframesParaAulas > p{
+    color: black;
+}
+table{
+    background-color: rgb(56, 53, 53);
+}
+iframe{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+footer{
+    background-color: black;
+    color: white;
+}
